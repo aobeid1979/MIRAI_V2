@@ -1,7 +1,5 @@
-'use client';
-import Card from './Card';
 import React from 'react';
-import Link from 'next/link';
+import Card from './Card';
 
 const ImageHome = () => {
   return (
@@ -13,14 +11,12 @@ const ImageHome = () => {
             <p className="mt-2 mb-4">
               Add a new Image to the gallery and share it with the world
             </p>
-            <Link
-              href="/addImage"
-              passHref
-              className="inline-block bg-black text-white
-              rounded-lg px-4 py-2 hover:bg-gray-700"
+            <a
+              href="/image.html"
+              className="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700"
             >
               Add Image
-            </Link>
+            </a>
           </Card>
           <Card>
             <h2 className="text-2xl font-bold">For User</h2>

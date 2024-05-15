@@ -1,6 +1,6 @@
 'use client';
 import Card from './Card';
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 
 const ImageHome = () => {

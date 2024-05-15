@@ -8,19 +8,6 @@ const ImagesList = () => {
   const [imageData, setImageData] = useState([]);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        // Assuming imagesData is an array of images fetched from images.json
-        setImageData(imagesData);
-      } catch (error) {
-        setError(error.message);
-      }
-    };
-
-    fetchData();
-  }, []);
-
   return (
     <div>
       <section className="bg-blue-50 px-4 py-10">

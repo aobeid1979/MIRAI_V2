@@ -1,3 +1,4 @@
+// ImageList.jsx
 import React from 'react';
 
 const ImageList = ({ img }) => {

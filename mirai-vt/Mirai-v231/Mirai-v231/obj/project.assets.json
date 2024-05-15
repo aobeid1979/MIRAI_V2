@@ -434,11 +434,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\amfo2\\OneDrive\\Desktop\\programmer\\mirai-vt\\Mirai-v231\\Mirai-v231\\Mirai-v231.csproj",
+      "projectUniqueName": "C:\\Users\\amfo2\\OneDrive\\Desktop\\programmer\\mirai-v2\\mirai-vt\\Mirai-v231\\Mirai-v231\\Mirai-v231.csproj",
       "projectName": "Mirai-v231",
-      "projectPath": "C:\\Users\\amfo2\\OneDrive\\Desktop\\programmer\\mirai-vt\\Mirai-v231\\Mirai-v231\\Mirai-v231.csproj",
+      "projectPath": "C:\\Users\\amfo2\\OneDrive\\Desktop\\programmer\\mirai-v2\\mirai-vt\\Mirai-v231\\Mirai-v231\\Mirai-v231.csproj",
       "packagesPath": "C:\\Users\\amfo2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\amfo2\\OneDrive\\Desktop\\programmer\\mirai-vt\\Mirai-v231\\Mirai-v231\\obj\\",
+      "outputPath": "C:\\Users\\amfo2\\OneDrive\\Desktop\\programmer\\mirai-v2\\mirai-vt\\Mirai-v231\\Mirai-v231\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
