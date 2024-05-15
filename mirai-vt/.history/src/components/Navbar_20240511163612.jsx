@@ -1,0 +1,83 @@
+'use client';
+
+import React , {useState }  from 'react';
+import Link from 'next/link';
+
+
+const Navbar = () => {
+    const [isOpen, setIsOpen ] = useState(false);
+  return (
+    <nav className="bg-black border-b border-indigo-500">
+      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div className="flex h-20 items-center justify-between">
+        <button type="button" onClick={() => setIsOpen(!isOpen)}>
+            <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
+              {isOpen ? (
+                <path fillRule="evenodd" clipRule="evenodd" d="M18.278 16.864a1 1 0 01-1.414 1.414l-8-8a1 1 0 011.414-1.414l8 8z" />
+              ) : (
+                <path fillRule="evenodd" clipRule="evenodd" d="M4 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 110 2H4a1 1 0 010-2zm0 6h16a1 1 0 110 2H4a1 1 0 010-2z" />
+              )}
+            </svg>
+          </button>
+          {isOpen && (
+            <div className="md:hidden bg-white text-black">
+              {/* Add your mobile menu items here */}
+              <a href="/index.html" className="block text-white px-2 py-4 hover:bg-gray-900">Home</a>
+              <a href="/Search.html" className="block text-white px-2 py-4 hover:bg-gray-900">About</a>
+              <a href="/Login.html" className="block text-white px-2 py-4 hover:bg-gray-900">Login</a>
+              <a href="/Sign Up.html" className="block text-white px-2 py-4 hover:bg-gray-900">Sign Up</a>
+            </div>
+          )}
+          <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
+            {/*<!-- Logo -->*/}
+            <Link href="/">
+              <div className="flex flex-shrink-0 items-center mr-4">
+                <img
+                  className="h-10 w-auto"
+                  src="/images/miraiLogo.png"
+                  alt="Mirai app logo"
+                />
+                <span className="hidden md:block text-white font-bold ml-2 text-xl md:text-2xl lg:text-2xl xl:text-2xl">
+                  Mirai React app
+                </span>
+              </div>
+            </Link>
+            <div className="flex justify-between w-full">
+              <div className="flex space-x-2">
+                <a
+                  href="/index.html"
+                  className="text-white bg-black hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
+                >
+                  Home
+                </a>
+                
+                <a
+                  href="/Search.html"
+                  className="text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
+                >
+                  Search
+                </a>
+              </div>
+              <div className="flex space-x-2">
+                <a
+                  href="/Login.html"
+                  className="text-white  hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
+                >
+                  Login
+                </a>
+                <a
+                  href="/Sign Up.html"
+                  className="text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
+                >
+                  Sign Up
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
