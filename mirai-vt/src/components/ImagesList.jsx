@@ -2,23 +2,27 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import ImageList from './ImageList';
-import imagesData from '../images.json';
+import Spinner from './Spinner';
 
 const ImagesList = () => {
-  const [imageData, setImageData] = useState([]);
   const [error, setError] = useState(null);
+  const [image, setImage] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchImage = async () => {
       try {
-        // Assuming imagesData is an array of images fetched from images.json
-        setImageData(imagesData);
+        const res = await fetch('http://localhost:3002/images');
+        const data = await res.json();
+        setImage(data);
       } catch (error) {
-        setError(error.message);
+        console.error('Error fetching image', error);
+      } finally {
+        setLoading(false);
       }
     };
 
-    fetchData();
+    fetchImage();
   }, []);
 
   return (
@@ -29,10 +33,16 @@ const ImagesList = () => {
             Browse Images
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {error ? (
-              <div>Error: {error}</div>
+            {loading ? (
+              <Spinner loading={loading}/>
             ) : (
-              imageData.map((img, index) => <ImageList key={index} img={img} />)
+              <>
+                {error ? (
+                  <div>Error: {error}</div>
+                ) : (
+                  image.map((img, index) => <ImageList key={index} img={img} />)
+                )}
+              </>
             )}
           </div>
         </div>

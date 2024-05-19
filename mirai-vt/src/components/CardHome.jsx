@@ -28,7 +28,7 @@ const ImageHome = () => {
               List your Images to find the perfect Image for you
             </p>
             <a
-              href="/add-image.html"
+              href="/browseImage"
               className="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-indigo-600"
             >
               Browse Images
