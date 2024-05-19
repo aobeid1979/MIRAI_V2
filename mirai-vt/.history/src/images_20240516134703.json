@@ -1,0 +1,84 @@
+{
+  "images": [
+    {
+      "id": "1",
+      "title": "Plains and plateaus view",
+      "type": "jpg",
+      "Description": "A beautiful image over plains.",
+      "location": "Landsjön, Sweden",
+      "imageUrl": "/images/högt1.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Lake view",
+      "type": "jpg",
+      "Description": "A beautiful image of the sky reflecting on a lake.",
+      "location": "Landsjön, Sweden",
+      "imageUrl": "/images/högt2.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Plains and plateaus view",
+      "type": "jpg",
+      "Description": "A beautiful image over plains.",
+      "location": "Landsjön, Sweden",
+      "imageUrl": "/images/högt3.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Plains and plateaus view",
+      "type": "jpg",
+      "Description": "A beautiful image over plains.",
+      "location": "Landsjön, Sweden",
+      "imageUrl": "/images/högt4.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Plains and plateaus view",
+      "type": "jpg",
+      "Description": "A beautiful image over plains.",
+      "location": "Landsjön, Sweden",
+      "imageUrl": "/images/högt5.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Lake view",
+      "type": "jpg",
+      "Description": "A beautiful image of the sky reflecting on a lake.",
+      "location": "Landsjön, Sweden",
+      "imageUrl": "/images/högt6.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Plains and plateaus view",
+      "type": "jpg",
+      "Description": "A beautiful image over plains.",
+      "location": "Landsjön, Sweden",
+      "imageUrl": "/images/högt7.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Plains and plateaus view",
+      "type": "jpg",
+      "Description": "Utom View over lake.",
+      "location": "Åsajön, Sweden",
+      "imageUrl": "/images/sjön1.jpg"
+    },
+    {
+      "id": "9",
+      "title": "Plains and plateaus view",
+      "type": "jpg",
+      "Description": "Utom View over lake.",
+      "location": "Åsajön, Sweden",
+      "imageUrl": "/images/sjön2.jpg"
+    },
+    {
+      "id": "10",
+      "title": "Plains and plateaus view",
+      "type": "jpg",
+      "Description": "Utom View over lake.",
+      "location": "Åsajön, Sweden",
+      "imageUrl": "/images/sjön3.jpg"
+    }
+  ]
+}
